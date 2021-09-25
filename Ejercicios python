@@ -1,0 +1,31 @@
+ej 1
+  print ("Hola mundo")
+  
+ej 2
+   Saludo = input()
+   print (Saludo)
+   
+ej 3
+  print ("¿Cómo te llamas?")
+  Nombre = input()
+  print ("Hola ", Nombre)
+  
+ej 4
+  print (((3+2)/(2*5))*((3+2)/(2*5)))
+  
+ej 5
+  print ("¿Cuántas horas trabajás al mes?")
+  Horas = input ()
+  print ("¿Cuánto te pagan por hora?")
+  Pago = input ()
+  Total = Horas * Pago 
+  print ("Deberías cobrar", Total)
+  
+ej 6
+  print ("Introduce un número entero")
+  n = input ()
+  total = n * (n + 1) / 2
+  print ("El resultado de la suma de todos los enteros desde 1 hasta " n " es " total )
+  
+ej 7
+  
