@@ -1,0 +1,73 @@
+continues = True
+print("""***********
+Calculadora
+***********
+Menu
+1)Suma
+2)Resta
+3)Multiplicación
+4)División 
+5)Potenciación
+6)Raíz
+7)Porcentaje
+8)Factorización
+9)Promedio
+
+
+0)Salir""""")
+while continues:
+    opc = int(input("Opción: "))
+    if opc == 1:
+        sum1 = int(input("Sumando uno: "))
+        sum2 = int(input("Sumando dos: "))
+        print("La suma es: ", sum1 + sum2)
+    elif opc == 2:
+        min = int(input("Minuendo: "))
+        sustr = int(input("Sustraendo: "))
+        print("La resta es: ", min - sustr)
+    elif opc == 3:
+        mcando = int(input("Multiplicando: "))
+        mcador = int(input("Multiplicador: "))
+        print("La multiplicación es: ", mcando*mcador)
+    elif opc == 4:
+        dividendo = int(input("Dividendo: "))
+        divisor = int(input("Divisor: "))
+        print("La división es: ", dividendo / divisor)
+    elif opc == 5:
+        base= int(input("Base: "))
+        potencia = int(input("Potencia: "))
+        print("El resultado es: ", base ** potencia)
+    elif opc == 6:
+        rcando= int(input("Radicando: "))
+        indice = int(input("Índice: "))
+        print("El resultado es: ", (round(rcando** (1/indice),0)))
+    elif opc == 7:
+        xciento= int(input("Porciento: "))
+        entero = int(input("Entero: "))
+        res = entero * (1/xciento)
+        print ("El resultado es ", res)
+    elif opc == 8:
+        n = int (input ("Factorial: "))
+        if n==0 or n==1:
+            print ("El resultado es 1")
+        elif n > 1:
+            res = 1
+            i = 1
+            while i<= n:
+                res = res * i
+                i = i + 1
+            print ("El resultado es ",res)
+        else:
+            print("Error. El número ingresado debe ser 0 o positivo. Reingrese \n")
+    elif opc == 9:
+        suma = 0
+        n = int(input("Cantidad de valores a sumar: "))
+        for cont in range(0,n):
+            val = int(input("Valor : "))
+            suma = suma + val
+        print("El resultado es" , suma/n)
+    elif opc == 0:
+        print ("Calculadora cerrada")
+        continues = False
+    else:
+        print ("Opción incorrecta. Reingrese \n")
